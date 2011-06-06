@@ -1,0 +1,39 @@
+body {
+	background: #333;
+	color: #ddd;
+}
+
+a:link { color: #9fcdff; text-decoration: none; }
+a:hover { color: #fff; }
+a:visited, a:active { color: #53a5ff; }
+
+#wrapper {
+	width: 95%;
+	margin: 0 auto;
+}
+
+h1, h2, h3 {
+	font-family: Verdana,Tahoma,Segoe,sans-serif;
+	text-align: center;
+}
+
+.content-wrap {
+	width: 33%;
+	display: block;
+	float: left;
+	margin: 10px auto;
+}
+
+.content-wrap div {
+	width: 20%;
+	background: #444;
+	display: block;
+	float: left;
+	font-size: 8px;
+	margin: 0 10px 10px 0;
+	padding: 20px;
+}
+
+.clear {
+	clear: both;
+}

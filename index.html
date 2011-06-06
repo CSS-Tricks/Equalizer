@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset='UTF-8'>
+
+	<title>Equalize Height for Multiple Rows</title>
+
+	<!-- Demo only -->
+	<link href="demo/demo.css" rel="stylesheet">
+
+	<!-- Required CSS styling, but do whatever you want with the overflow -->
+	<style>
+		div.stinky { overflow: auto; background: #550; }
+	</style>
+
+	<!-- Required script -->
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js'></script>
+	<script src="js/jquery.equalizer.js"></script>
+	<script>
+	$(function() {
+		$('.content-wrap:eq(1) > div').equalizer({ max: 165, overflow : 'stinky' });
+		$('.content-wrap:eq(2) > div').equalizer({ min: 140 });
+	});
+	</script>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+	<h1><a href="https://github.com/Mottie/Equalizer">jQuery Equalizer</a></h1>
+	<h3>Multi-row column resizer (resize this window to see it in action)</h3>
+
+	<!-- three identical blocks of content to demonstrate the plugin -->
+	<div class="content-wrap">
+		<h3>Not Equalized</h3>
+		<div>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nunc est, facilisis in blandit sit amet, rhoncus vel lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</div>
+		<div>2. Vivamus eu lorem mauris. Curabitur elementum felis nec libero malesuada in varius neque ultrices. Nunc sollicitudin nunc non risus mattis at varius lorem sagittis. Ut erat quam, molestie a viverra ac, porttitor a massa. Mauris eget mollis massa. Suspendisse et erat sem. Vestibulum eleifend vulputate elit at adipiscing. Suspendisse ac lectus massa.</div>
+		<div>3. Nulla gravida neque nec metus tempus pulvinar. Nulla tincidunt lacinia ultricies. Curabitur tristique malesuada bibendum. Phasellus congue magna sem. Morbi tristique dui non sem ullamcorper fringilla. Nullam nec feugiat nibh. Duis sodales rutrum tortor sit amet volutpat.</div>
+		<div>4. Nunc diam mi, dignissim eu fermentum at, egestas id ligula.</div>
+		<div>5. Fusce lacus metus, vehicula nec congue id, adipiscing ac erat. Nunc justo neque, pharetra quis interdum vel, porta eget odio. Nunc lacinia posuere dui.</div>
+		<div>6. Quisque nec ante mi, ac tempus turpis.</div>
+		<div>7. Quisque vel erat turpis. Fusce accumsan venenatis dapibus. Mauris viverra, felis non laoreet vestibulum, leo nibh vulputate justo, in accumsan libero magna nec metus. Ut condimentum mauris nisl. Vivamus in nunc nisl. Proin commodo, mauris a placerat pellentesque, justo nisi euismod lacus, ut porttitor dui erat sit amet mi.</div>
+		<div>8. Nam gravida neque eget diam venenatis semper. Phasellus ultricies porttitor nisl. Nam adipiscing mollis magna et dictum. Praesent ornare tempor augue, sit amet lobortis risus dictum at. Donec ligula felis, hendrerit vel laoreet quis, ornare auctor enim.</div>
+		<br class="clear">
+	</div>
+
+	<div class="content-wrap">
+		<h3>Max Height</h3>
+		<div>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nunc est, facilisis in blandit sit amet, rhoncus vel lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</div>
+		<div>2. Vivamus eu lorem mauris. Curabitur elementum felis nec libero malesuada in varius neque ultrices. Nunc sollicitudin nunc non risus mattis at varius lorem sagittis. Ut erat quam, molestie a viverra ac, porttitor a massa. Mauris eget mollis massa. Suspendisse et erat sem. Vestibulum eleifend vulputate elit at adipiscing. Suspendisse ac lectus massa.</div>
+		<div>3. Nulla gravida neque nec metus tempus pulvinar. Nulla tincidunt lacinia ultricies. Curabitur tristique malesuada bibendum. Phasellus congue magna sem. Morbi tristique dui non sem ullamcorper fringilla. Nullam nec feugiat nibh. Duis sodales rutrum tortor sit amet volutpat.</div>
+		<div>4. Nunc diam mi, dignissim eu fermentum at, egestas id ligula.</div>
+		<div>5. Fusce lacus metus, vehicula nec congue id, adipiscing ac erat. Nunc justo neque, pharetra quis interdum vel, porta eget odio. Nunc lacinia posuere dui.</div>
+		<div>6. Quisque nec ante mi, ac tempus turpis.</div>
+		<div>7. Quisque vel erat turpis. Fusce accumsan venenatis dapibus. Mauris viverra, felis non laoreet vestibulum, leo nibh vulputate justo, in accumsan libero magna nec metus. Ut condimentum mauris nisl. Vivamus in nunc nisl. Proin commodo, mauris a placerat pellentesque, justo nisi euismod lacus, ut porttitor dui erat sit amet mi.</div>
+		<div>8. Nam gravida neque eget diam venenatis semper. Phasellus ultricies porttitor nisl. Nam adipiscing mollis magna et dictum. Praesent ornare tempor augue, sit amet lobortis risus dictum at. Donec ligula felis, hendrerit vel laoreet quis, ornare auctor enim.</div>
+		<br class="clear">
+	</div>
+
+	<div class="content-wrap">
+		<h3>Min Height</h3>
+		<div>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nunc est, facilisis in blandit sit amet, rhoncus vel lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</div>
+		<div>2. Vivamus eu lorem mauris. Curabitur elementum felis nec libero malesuada in varius neque ultrices. Nunc sollicitudin nunc non risus mattis at varius lorem sagittis. Ut erat quam, molestie a viverra ac, porttitor a massa. Mauris eget mollis massa. Suspendisse et erat sem. Vestibulum eleifend vulputate elit at adipiscing. Suspendisse ac lectus massa.</div>
+		<div>3. Nulla gravida neque nec metus tempus pulvinar. Nulla tincidunt lacinia ultricies. Curabitur tristique malesuada bibendum. Phasellus congue magna sem. Morbi tristique dui non sem ullamcorper fringilla. Nullam nec feugiat nibh. Duis sodales rutrum tortor sit amet volutpat.</div>
+		<div>4. Nunc diam mi, dignissim eu fermentum at, egestas id ligula.</div>
+		<div>5. Fusce lacus metus, vehicula nec congue id, adipiscing ac erat. Nunc justo neque, pharetra quis interdum vel, porta eget odio. Nunc lacinia posuere dui.</div>
+		<div>6. Quisque nec ante mi, ac tempus turpis.</div>
+		<div>7. Quisque vel erat turpis. Fusce accumsan venenatis dapibus. Mauris viverra, felis non laoreet vestibulum, leo nibh vulputate justo, in accumsan libero magna nec metus. Ut condimentum mauris nisl. Vivamus in nunc nisl. Proin commodo, mauris a placerat pellentesque, justo nisi euismod lacus, ut porttitor dui erat sit amet mi.</div>
+		<div>8. Nam gravida neque eget diam venenatis semper. Phasellus ultricies porttitor nisl. Nam adipiscing mollis magna et dictum. Praesent ornare tempor augue, sit amet lobortis risus dictum at. Donec ligula felis, hendrerit vel laoreet quis, ornare auctor enim.</div>
+		<br class="clear">
+	</div>
+
+</div>
+
+</body>
+
+</html>

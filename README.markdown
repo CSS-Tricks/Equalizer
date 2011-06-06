@@ -1,4 +1,4 @@
-##Features
+##Features ([Demo](http://mottie.github.com/Equalizer/))
 
 * Equalize column heights across multiple rows
 * Resize column heights when the page is resized. Can be disabled for fixed width layouts.

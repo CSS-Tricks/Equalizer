@@ -1,5 +1,5 @@
 /*
-	Equalizer v1.0
+	Equalizer v1.0.1
 
 	Original by Chris Coyier: http://css-tricks.com/equal-height-blocks-in-rows/
 	from an idea by Stephen Akins: http://stephenakins.blogspot.com/2011/01/uniform-div-heights-for-liquid-css-p.html
@@ -27,7 +27,8 @@ $.fn.equalizer = function(options) {
 
 		if (base.options.resizeable) {
 			// wrap content with a span so we can always get the exact height of the content on resize
-			base.$el.wrapInner('<span />');
+			// inline styling needed for Chrome; the span must have display:block, or use a div
+			base.$el.wrapInner('<span class="equalizer-inner" style="display:block;margin:0;padding:0;" />');
 
 			// throttled resize columns
 			$(window).resize(function(){
@@ -49,7 +50,7 @@ $.fn.equalizer = function(options) {
 		.removeClass(base.options.overflow) // removed as it may have changed on resize
 		.each(function(){
 			var $this = $(this),
-				$el = (base.options.resizeable) ? $this.find('> span') : $this;
+				$el = (base.options.resizeable) ? $this.find('span.equalizer-inner') : $this;
 			// find offset (position relative to document)
 			base.curTop = $this.offset().top;
 

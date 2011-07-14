@@ -1,5 +1,5 @@
 body {
-	background: #333;
+	background: #222;
 	color: #ddd;
 }
 
@@ -32,6 +32,12 @@ h1, h2, h3 {
 	font-size: 8px;
 	margin: 0 10px 10px 0;
 	padding: 20px;
+}
+
+.content-wrap h1 {
+	font-family: 'Redressed', cursive;
+	font-size: 22px;
+	margin-top: 0;
 }
 
 .clear {

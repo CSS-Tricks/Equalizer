@@ -1,6 +1,6 @@
 ##Features ([Demo](http://mottie.github.com/Equalizer/))
 
-* Equalize column heights across multiple rows
+* Equalize column heights across multiple rows (originally from [this post](http://css-tricks.com/8401-equal-height-blocks-in-rows/))
 * Resize column heights when the page is resized. Can be disabled for fixed width layouts.
 * Choose between height (default), outer height or inner height.
 * Set a minimum or maximum height of a column, with an css class added when content overflows for additional styling
@@ -55,6 +55,11 @@ $('.wrapper > div').equalizer({
 ```
 
 ##Change Log
+
+###Version 1.0.1 (7/14/2011)
+
+* Fixed a problem with adding headers, and headers with custom fonts, inside the blocks.
+* Added headers into the demo.
 
 ###Version 1.0 (6/6/2011)
 

@@ -1,0 +1,37 @@
+{
+    "name": "Equalizer",
+    "version": "1.1",
+    "title": "Equalizer",
+    "author": {
+        "name": "Chris Coyier",
+        "url": "https://github.com/chriscoyier"
+    },
+    "licenses": [
+        {
+            "type": "GPL3",
+            "url": "https://github.com/Mottie/Equalizer/blob/master/license.txt"
+        }
+    ],
+    "dependencies": {
+        "jquery": ">=1.2.6"
+    },
+    "description": "Equalize column heights across multiple rows, on page resize. It can also be based on a minimum or maximum set height.",
+    "keywords": [
+        "equal heights",
+        "equal columns",
+        "resize"
+    ],
+    "homepage": "http://css-tricks.com/equal-height-blocks-in-rows/",
+    "demo": "http://mottie.github.com/Equalizer/",
+    "docs": "http://mottie.github.com/Equalizer/",
+    "maintainers": [
+        {
+            "name": "Rob Garrison",
+            "url": "https://github.com/Mottie"
+        }
+    ],
+    "files": [
+        "js/jquery.equalizer.js",
+        "js/jquery.equalizer.min.js"
+    ]
+}

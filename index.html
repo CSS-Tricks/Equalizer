@@ -19,8 +19,8 @@
 	<script src="js/jquery.equalizer.js"></script>
 	<script>
 	$(function() {
-		$('.content-wrap:eq(1) > div').equalizer({ max: 165, overflow : 'stinky' });
-		$('.content-wrap:eq(2) > div').equalizer({ min: 140 });
+		$('.content-wrap:eq(1)').equalizer({ columns : '> div', max: 165, overflow : 'stinky' });
+		$('.content-wrap:eq(2)').equalizer({ min: 140 });
 	});
 	</script>
 

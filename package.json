@@ -9,7 +9,7 @@
     "licenses": [
         {
             "type": "GPL3",
-            "url": "https://github.com/Mottie/Equalizer/blob/master/license.txt"
+            "url": "https://github.com/css-tricks/Equalizer/blob/master/license.txt"
         }
     ],
     "dependencies": {
@@ -22,8 +22,8 @@
         "resize"
     ],
     "homepage": "http://css-tricks.com/equal-height-blocks-in-rows/",
-    "demo": "http://mottie.github.com/Equalizer/",
-    "docs": "http://mottie.github.com/Equalizer/",
+    "demo": "http://css-tricks.github.com/Equalizer/",
+    "docs": "https://github.com/CSS-Tricks/Equalizer",
     "maintainers": [
         {
             "name": "Rob Garrison",

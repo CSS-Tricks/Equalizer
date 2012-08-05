@@ -1,4 +1,4 @@
-# Features ([Demo](http://mottie.github.com/Equalizer/))
+# Features ([Demo](http://css-tricks.github.com/Equalizer/))
 
 * Equalize column heights across multiple rows (originally from [this post](http://css-tricks.com/8401-equal-height-blocks-in-rows/))
 * Resize column heights when the page is resized. Can be disabled for fixed width layouts.

@@ -17,6 +17,35 @@ h1, h2, h3 {
 	text-align: center;
 }
 
+p {
+	text-align: center;
+}
+
+/* navigation buttons */
+#nav {
+	display: block;
+	width: 90%;
+	margin: 10px auto;
+	font-size: 0.9em;
+	text-align: center;
+	line-height: 3em;
+}
+#nav a {
+	text-align: center;
+	background: black;
+	color: white;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	padding: 10px;
+	white-space: nowrap;
+}
+#nav a.git { background: #006; }
+#nav a.play { background: #060; }
+#nav a.issue { background: #600; }
+#nav a:hover, #nav a.current { background: #666; }
+
+/* demo block */
 .content-wrap {
 	width: 33%;
 	display: block;
@@ -24,7 +53,7 @@ h1, h2, h3 {
 	margin: 10px auto;
 }
 
-.content-wrap div {
+.content-wrap div, .content-wrap article {
 	width: 20%;
 	background: #444;
 	display: block;
@@ -42,4 +71,28 @@ h1, h2, h3 {
 
 .clear {
 	clear: both;
+}
+
+/* Breakpoint demo */
+.adaptive .content-wrap {
+	background-color: #111;
+	float: none;
+}
+
+.adaptive article {
+	width: 48%;
+	margin: 0 1% 1.5% 1%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.showWidth {
+	width: 494px; /* subtract out the 6px border */
+	height: 20px;
+	border: 3px solid;
+	border-color: #555 #555 transparent #555;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
 }

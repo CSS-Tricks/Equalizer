@@ -3,62 +3,35 @@
 * Equalize column heights across multiple rows (originally from [this post](http://css-tricks.com/8401-equal-height-blocks-in-rows/))
 * Resize column heights when the page is resized. Can be disabled for fixed width layouts.
 * Choose between height (default), outer height or inner height.
-* Set a minimum or maximum height of a column, with an css class added when content overflows for additional styling
+* Set a minimum or maximum height of a column, with an css class added when content overflows for additional styling.
+* Set a breakpoint to disable the Equalizer plugin when the wrapping element size is below a set width.
 
-# Setup
+# Documentation
 
-## Header
-
-```html
-<!-- Required CSS styling, but do whatever you want with the overflow and other styling -->
-<style>
-  .overflowed { overflow: auto; }
-</style>
-
-<!-- Required script -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
-<script src="js/jquery.equalizer.js"></script>
-<script>
-$(function() {
-  $('.wrapper').equalizer();
-});
-</script>
-
-```
-
-## Example HTML
-
-```html
-<div class="wrapper">
-  <div>Block 1</div>
-  <div>Block 2</div>
-  <div>Block 3</div>
-  <div>Block 4</div>
-  <div>Block 5</div>
-  <div>Block 6</div>
-</div>
-```
-
-# Usage & Options (defaults)
-
-```javascript
-// target the wrapper of all of the elements to equalize,
-// in this case the divs inside of .wrapper
-$('.wrapper').equalizer({
-  // height = type of height to use
-  // "o" or "outer" = "outerHeight" - includes height + padding + border + margin
-  // "i" or "inner" = "innerHeight" - includes height + padding + border
-  // default        = "height"      - use just the height
-  columns    : '> div',     // elements inside of the wrapper
-  useHeight  : 'height',    // height measurement to use
-  resizeable : true,        // when true, heights are adjusted on window resize
-  min        : 0,           // Minimum height applied to all columns
-  max        : 0,           // Max height applied to all columns
-  overflow   : 'overflowed' // class applied to columns that are taller than the allowable max
-});
-```
+* [Moved to the wiki pages](https://github.com/CSS-Tricks/Equalizer/wiki).
 
 # Change Log
+
+See the [change log](https://github.com/CSS-Tricks/Equalizer/wiki/Change) for a complete list of changes.
+
+## Version 1.2 (1/3/2013)
+
+* Updated demos to use jQuery 1.8+. Also, satisfactorily tested the demos with jQuery 1.9 beta 1.
+* Added `breakpoint` and `disabled` options:
+  * If the `breakpoint` option contains a value, in pixels, the Equalizer plugin will disable itself when the main wrapper element width is below this value; it's the `.wrapper` in the setup examples.
+  * When the breakpoint is reached, the class name from the `disabled` option is applied to the main wrapper element.
+  * Added an [adaptive demo](http://css-tricks.github.com/Equalizer/adaptive.html) to show how this works together.
+  * If the main wrapper element is the browser window, then you can use [media queries](http://css-tricks.com/css-media-queries/) to change the style of the columns inside the wrapper.
+  * Enhancement request from [issue #1](https://github.com/CSS-Tricks/Equalizer/issues/1).
+* Added a method to enable or disable the Equalizer plugin.
+  * To completely disable or re-enable the Equalizer plugin, trigger the desired event on the wrapper element:
+
+    ```javascript
+    // to disable trigger disable.equalizer
+    $('.wrapper').trigger('disable.equalizer');
+    // use enable.equalizer to make it work again
+    $('.wrapper').trigger('enable.equalizer');
+    ```
 
 ## Version 1.1 (1/12/2012)
 
@@ -88,12 +61,3 @@ $('.wrapper').equalizer({
 		  // $('.wrapper').equalizer();
 		});
 		```
-
-## Version 1.0.1 (7/14/2011)
-
-* Fixed a problem with adding headers, and headers with custom fonts, inside the blocks.
-* Added headers into the demo.
-
-## Version 1.0 (6/6/2011)
-
-* Initial build on Github

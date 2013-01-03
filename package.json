@@ -1,6 +1,6 @@
 {
     "name": "Equalizer",
-    "version": "1.1",
+    "version": "1.2",
     "title": "Equalizer",
     "author": {
         "name": "Chris Coyier",
@@ -19,11 +19,12 @@
     "keywords": [
         "equal heights",
         "equal columns",
-        "resize"
+        "resize",
+        "adaptive"
     ],
     "homepage": "http://css-tricks.com/equal-height-blocks-in-rows/",
     "demo": "http://css-tricks.github.com/Equalizer/",
-    "docs": "https://github.com/CSS-Tricks/Equalizer",
+    "docs": "https://github.com/CSS-Tricks/Equalizer/wiki",
     "maintainers": [
         {
             "name": "Rob Garrison",

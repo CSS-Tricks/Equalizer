@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8'>
+	<title>Equalize Heights in Multiple Rows</title>
+
+	<!-- Demo only -->
+	<link href="demo/demo.css" rel="stylesheet">
+
+	<!-- Required CSS styling, but do whatever you want with the overflow;
+		changed to "stinky" for this demo only, default class name is "overflowed" -->
+	<style>
+
+	/* The ghost, nudged to maintain perfect centering
+	.content-wrap article:before {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+		margin-right: -0.25em;
+	} */
+
+	/* The element to be centered, can
+	also be of any width and height 
+	.equalizer-inner {
+		display: inline-block !important;
+		vertical-align: middle;
+	}*/
+
+	.noresize article {
+		float: none;
+		width: 100%;
+		margin: 0 0 10px 0;
+	}
+
+	</style>
+
+	<!-- Required script -->
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script>
+	<script src="js/jquery.equalizer.js"></script>
+	<script>
+	$(function() {
+		$('.content-wrap').equalizer({
+			breakpoint : 500,       // if browser less than this width, disable the plugin
+			columns    : 'article',
+			disabled   : 'noresize' // class applied when browser width is less than the breakpoint value
+		});
+	});
+	</script>
+
+</head>
+<body class="adaptive">
+
+<div id="wrapper">
+
+	<div id="nav">
+		<a href="index.html">Main Demo</a>
+		<a class="current" href="adaptive.html">Adaptive Demo</a>
+		<a class="play" href="http://jsfiddle.net/Mottie/cuuqL/">Playground</a>
+		<a class="git" href="https://github.com/css-tricks/Equalizer/wiki">Documentation</a>
+		<a class="git" href="https://github.com/css-tricks/Equalizer/zipball/master">Download</a>
+		<a class="issue" href="https://github.com/css-tricks/Equalizer/issues">Issues</a>
+	</div>
+
+	<h1><a href="https://github.com/css-tricks/Equalizer">jQuery Equalizer</a></h1>
+	<h3>Adaptive Breakpoint<br><small>(resize the window below the breakpoint)</small></h3>
+
+	<p>
+		When the wrapper is less than 500px, the equalizer plugin will apply a class name to unfloat the columns, then disable itself.<br>
+		A class name isn't required if the wrapper happens to be the browser window and you are using media queries.
+	</p>
+
+	<fieldset class="showWidth"><legend>&nbsp;500px breakpoint&nbsp;</legend></fieldset>
+
+	<section class="content-wrap" style="width:50%;">
+		<article>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nunc est, facilisis in blandit sit amet, rhoncus vel lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</article>
+		<article>2. Vivamus eu lorem mauris. Curabitur elementum felis nec libero malesuada in varius neque ultrices. Nunc sollicitudin nunc non risus mattis at varius lorem sagittis. Ut erat quam, molestie a viverra ac, porttitor a massa. Mauris eget mollis massa. Suspendisse et erat sem. Vestibulum eleifend vulputate elit at adipiscing. Suspendisse ac lectus massa.</article>
+		<article>3. Nulla gravida neque nec metus tempus pulvinar. Nulla tincidunt lacinia ultricies. Curabitur tristique malesuada bibendum. Phasellus congue magna sem. Morbi tristique dui non sem ullamcorper fringilla. Nullam nec feugiat nibh. Duis sodales rutrum tortor sit amet volutpat.</article>
+		<article>4. Nunc diam mi, dignissim eu fermentum at, egestas id ligula.</article>
+		<article>5. Fusce lacus metus, vehicula nec congue id, adipiscing ac erat. Nunc justo neque, pharetra quis interdum vel, porta eget odio. Nunc lacinia posuere dui.</article>
+		<article>6. Quisque nec ante mi, ac tempus turpis.</article>
+		<article>7. Quisque vel erat turpis. Fusce accumsan venenatis dapibus. Mauris viverra, felis non laoreet vestibulum, leo nibh vulputate justo, in accumsan libero magna nec metus. Ut condimentum mauris nisl. Vivamus in nunc nisl. Proin commodo, mauris a placerat pellentesque, justo nisi euismod lacus, ut porttitor dui erat sit amet mi.</article>
+		<article>8. Nam gravida neque eget diam venenatis semper. Phasellus ultricies porttitor nisl. Nam adipiscing mollis magna et dictum. Praesent ornare tempor augue, sit amet lobortis risus dictum at. Donec ligula felis, hendrerit vel laoreet quis, ornare auctor enim.</article>
+		<br class="clear">
+	</section>
+
+</div>
+
+</body>
+</html>

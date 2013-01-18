@@ -23,6 +23,7 @@
   "homepage": "http://css-tricks.com/equal-height-blocks-in-rows/",
   "demo": "http://css-tricks.github.com/Equalizer/",
   "docs": "https://github.com/CSS-Tricks/Equalizer/wiki",
+  "download": "https://github.com/CSS-Tricks/Equalizer/archive/master.zip",
   "dependencies": {
     "jquery": ">=1.2.6"
   },

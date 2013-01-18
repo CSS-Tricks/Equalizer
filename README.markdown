@@ -14,6 +14,12 @@
 
 See the [change log](https://github.com/CSS-Tricks/Equalizer/wiki/Change) for a complete list of changes.
 
+## Version 1.2.3 (1/18/2013)
+
+* Updated to use jQuery 1.9.
+* Tested successfully with jQuery 2.0 beta 1 (not in IE).
+* More tweaks to the manifest file to get it to register with the plugin site.
+
 ## Version 1.2.2 (1/18/2013)
 
 * Another attempt to register the plugin - version bump needed.

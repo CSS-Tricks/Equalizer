@@ -1,7 +1,7 @@
 {
   "name": "equalizer",
   "title": "Equalizer",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Equalize column heights across multiple rows, on page resize. It can also be based on a minimum or maximum set height.",
   "author": {
     "name": "Chris Coyier",
@@ -28,10 +28,12 @@
     "jquery": ">=1.2.6"
   },
   "keywords": [
-    "equal heights",
-    "equal columns",
+    "equal",
+    "columns",
+    "height",
     "resize",
-    "adaptive"
+    "adaptive",
+    "ui"
   ],
   "files": [
     "js/jquery.equalizer.js",

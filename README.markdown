@@ -14,6 +14,10 @@
 
 See the [change log](https://github.com/CSS-Tricks/Equalizer/wiki/Change) for a complete list of changes.
 
+## Version 1.2.2 (1/18/2013)
+
+* Another attempt to register the plugin - version bump needed.
+
 ## Version 1.2.1 (1/18/2013)
 
 * New version labeled to enable updating the [jquery plugin registry](http://plugins.jquery.com/).

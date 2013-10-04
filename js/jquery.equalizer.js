@@ -1,5 +1,5 @@
 /*
-	Equalizer v1.2.3
+	Equalizer v1.2.4
 
 	Original by Chris Coyier: http://css-tricks.com/equal-height-blocks-in-rows/
 	from an idea by Stephen Akins: http://stephenakins.blogspot.com/2011/01/uniform-div-heights-for-liquid-css-p.html
@@ -75,7 +75,11 @@ $.equalizer = function(el, options){
 	};
 
 	base.checkBoxSizing = function(){
-		if (parseFloat($.fn.jquery, 10) >= 1.8) { return false; }
+		var v = (function(version) {
+			version[0] = parseInt(version[0], 10);
+			return (version[0] > 1) || (version[0] === 1 && parseInt(version[1], 10) >= 8);
+		})($.fn.jquery.split("."));
+		if (v) { return false; }
 		// older versions of jQuery need padding added to the border box to get the correct height
 		var i, s = ['boxSizing', 'MozBoxSizing', 'WebkitBoxSizing', 'msBoxSizing'],
 			l = s.length;

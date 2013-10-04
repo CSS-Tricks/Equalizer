@@ -14,9 +14,13 @@
 
 See the [change log](https://github.com/CSS-Tricks/Equalizer/wiki/Change) for a complete list of changes.
 
+## Version 1.2.5 (10/4/2013)
+
+* I apparently just closed issue #21... typo fix!
+
 ## Version 1.2.4 (10/4/2013)
 
-* Parsing of jQuery version is now properly done internally. Fixes [issue #21](https://github.com/CSS-Tricks/ANythingZoomer/issues/21).
+* Parsing of jQuery version is now properly done internally. Fixes [issue #2](https://github.com/CSS-Tricks/Equalizer/issues/2).
 
 ## Version 1.2.3 (1/18/2013)
 

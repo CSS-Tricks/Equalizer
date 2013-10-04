@@ -1,7 +1,7 @@
 {
   "name": "equalizer",
   "title": "Equalizer",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Equalize column heights across multiple rows, on page resize. It can also be based on a minimum or maximum set height.",
   "author": {
     "name": "Chris Coyier",

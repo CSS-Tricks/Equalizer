@@ -1,5 +1,5 @@
 /*
-	Equalizer v1.2.4
+	Equalizer v1.2.5
 
 	Original by Chris Coyier: http://css-tricks.com/equal-height-blocks-in-rows/
 	from an idea by Stephen Akins: http://stephenakins.blogspot.com/2011/01/uniform-div-heights-for-liquid-css-p.html
